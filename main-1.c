@@ -7,7 +7,7 @@ int multi(int, int);
  
 int main(int argc, char* argv[])
 {
-	int a, b, c;
+	int num_a, num_b, c;
 	char operator;
 	
 	printf("Please enter a expression");
@@ -16,16 +16,16 @@ int main(int argc, char* argv[])
 	switch (operator)
 	{
 		case '+':
-			c = add(a, b);
+			c = add(num_a, num_b);
 			break;
 		case '-':
-			c = sub(a, b);
+			c = sub(num_a, num_b);
 			break;
 		case '*':
-			c = multi(a, b);
+			c = multi(num_a, num_b);
 			break;
 		case '/':
-			c = div(a, b);
+			c = div(num_a, num_b);
 			break;
 	}
 	
